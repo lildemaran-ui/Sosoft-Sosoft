@@ -18,6 +18,7 @@ export default function Projectos() {
             <p className="text-gray-700">
               Plataforma institucional do Instituto Politécnico Industrial de Luanda, com acesso a informações acadêmicas, administrativas e técnicas.
             </p>
+            
           </div>
 
           {/* Acesso ETP */}
