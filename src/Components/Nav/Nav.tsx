@@ -22,7 +22,7 @@ export default function Nav() {
             alt="Sosoft Logo"
             className="h-8 sm:h-12 object-contain"
           />
-          <p >Sosoft</p>
+          <p >SOSOFT</p>
          </div>
         </Link>
         <div className="hidden md:items-center md:flex gap-4 ">
@@ -58,9 +58,11 @@ export default function Nav() {
             Contacto
           </a>
           <div>
-            <button className="  px-3 py-2 rounded-md bg-[#F19209] transition-colors duration-700 font-medium hover:bg-[#da8309] text-white">
+           <a href="#Contacto">
+             <button className="  px-3 py-2 rounded-md bg-[#F19209] transition-colors duration-700 font-medium hover:bg-[#da8309] text-white">
               Fale conosco
             </button>
+           </a>
           </div>
         </div>
     {/* Botão de menu */}

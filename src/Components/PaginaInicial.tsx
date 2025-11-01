@@ -1,11 +1,9 @@
-import { Link } from "react-router-dom";
 import video from "../assets/videos/video3.mp4";
 import videogif from "../assets/videos/codeGif.mp4";
 import arrow from "../imagens/right-arrow.png";
 import Foother from "./Footer/Foother";
 import Nav from "./Nav/Nav";
 import Serviços from "./Serviços";
-
 export default function PaginaInicial() {
   return (
     /**Cabeçalho */
@@ -33,8 +31,8 @@ export default function PaginaInicial() {
                 crescer e evoluir
               </p>
             </div>
-            <Link to="/Serviços">
-              <button className="bg-[#F19209] font-roboto hover:text-white text-base p-2 sm:text-xl  hover:text-lg rounded-xl drop-shadow-lg text-white transition-transform duration-700 sm:p-3">
+            <a href="#Serviços">
+              <button className="bg-[#F19209] font-roboto hover:text-white text-base p-2 sm:text-xl  hover:text-lg rounded-xl drop-shadow-lg text-white transition-transform duration-700 sm:p-3 ">
                 Explore Nossos Serviços
                 <img
                   src={arrow}
@@ -42,7 +40,7 @@ export default function PaginaInicial() {
                   className="inline-block w-4 sm:w-auto ml-2 animate-moveArrow "
                 />{" "}
               </button>
-            </Link>
+            </a>
           </div>
         </div>
 
