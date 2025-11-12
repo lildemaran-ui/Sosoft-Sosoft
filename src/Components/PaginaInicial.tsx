@@ -1,4 +1,4 @@
-import video from "../assets/videos/video3.mp4";
+import video from "../assets/video3.mp4";
 import videogif from "../assets/videos/codeGif.mp4";
 import arrow from "../imagens/right-arrow.png";
 import Foother from "./Footer/Foother";
