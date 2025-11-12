@@ -1,4 +1,5 @@
-import iconNav from "../../assets/IconNav.png";
+import iconNav from "../../assets/IconFooter.png";
+import { Link } from "react-router-dom";
 
 export default function Foother() {
   return (
@@ -26,35 +27,69 @@ export default function Foother() {
               Navegação
             </h3>
             <ol className="space-y-2 ">
+             <Link to="/PaginaInicial">
               <li className="hover:text-[#F19209] text-xs sm:text-base transition-colors duration-700 cursor-pointer">
                 Início
               </li>
+             </Link>
+              <a href="#Serviços">
               <li className="hover:text-[#F19209] text-xs sm:text-base transition-colors duration-700 cursor-pointer">
                 Serviços
               </li>
+              </a>
+              <Link to="/Sobre">
               <li className="hover:text-[#F19209] text-xs sm:text-base transition-colors duration-700 cursor-pointer">
                 Sobre
-              </li>
+              </li> 
+              </Link>
+              <Link to="/Portifolio">
               <li className="hover:text-[#F19209] text-xs sm:text-base transition-colors duration-700 cursor-pointer">
                 Portfólio
               </li>
+              </Link>
+             <Link to="/Contacto">
               <li className="hover:text-[#F19209] text-xs sm:text-basetransition-colors duration-700 cursor-pointer">
                 Contacto
               </li>
+             </Link>
             </ol>
           </div>
-          <div>
+          <div >
             <h3 className="text-base sm:text-lg font-semibold text-white mb-4 cursor-default">
               Serviços
             </h3>
             <ol className="space-y-2">
+              <a href="#Serviços">
               <li className="hover:text-[#F19209] transition-colors text-xs sm:text-base  duraction-700 cursor-pointer">
                 Desenvolvimento
               </li>
+              </a>
 
+              <a href="#Serviços">
               <li className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer">
                 Criação de cartões de identificação{" "}
               </li>
+              </a>
+               <a href="#Serviços">
+              <li className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer">
+               Infraestrutura e Redes
+              </li>
+              </a>
+               <a href="#Serviços">
+              <li className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer">
+                Serviços em Nuvem
+              </li>
+              </a>
+              <a href="#Serviços">
+              <li className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer">
+                Consultoria e Suporte Técnico
+              </li>
+              </a>
+              <a href="#Serviços">
+              <li className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer">
+                Design e Identidade Visual 
+              </li>
+              </a>
             </ol>
           </div>
           <div>
@@ -68,9 +103,10 @@ export default function Foother() {
               <li className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer">
                 Tel.: +244 942 031 240
               </li>
-              <li className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer">
+              <a href="mailto:geral@sosoft.ao"
+              className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer">
                 Email: geral@sosoft.ao
-              </li>
+              </a>
             </ol>
           </div>
         </div>

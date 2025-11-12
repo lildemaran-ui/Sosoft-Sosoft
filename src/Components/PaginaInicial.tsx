@@ -81,12 +81,12 @@ export default function PaginaInicial() {
           Contacte-nos!
         </h1>
         <div className="items-center justify-center flex  mb-10">
-          <button className="bg-[#F19209] p-2 sm:p-3 shadow-lg rounded-xl transition-colors duraction-700 text-base sm:text-lg hover:bg-yellow-400 hover:p-4 font-roboto text-white ">
+          <button className="bg-[#F19209] p-2 sm:p-3 shadow-lg rounded-xl  transition-all duraction-700 text-base sm:text-lg hover:bg-yellow-400 hover:p-2 sm:hover:text-base  text-white ">
             Peça um orçamento
             <img
               src={arrow}
               alt="Seta"
-              className="inline-block w-4 sm:w-auto ml-2 animate-moveArrow "
+              className="inline-block w-4 sm:w-auto sm:hover:ml-0.5 ml-2 animate-moveArrow "
             />
           </button>
         </div>
