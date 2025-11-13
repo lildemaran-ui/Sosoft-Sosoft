@@ -8,7 +8,7 @@ import DefaultLayout from "../Templates/DefaultLayout";
 export default function AppRoutes() {
   return (
     <Routes>
-      <AtualizarPágina/>
+      
         <Route path="/" element={<DefaultLayout/>}>
       <Route path="/" element={<Navigate to="/PaginaInicial" />}></Route>
       <Route
