@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 .env
-# Ignorando pasta interna duplicada que causa confusão no status
-SOSOFT-PAGE/
+
+# Pastas de Cache / Temporárias
+.cache
+.temp
+tmp
