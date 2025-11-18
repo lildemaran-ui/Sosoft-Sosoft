@@ -1,0 +1,4 @@
+[submodule "DAILY-CHALLENGES"]
+	path = DAILY-CHALLENGES
+	
+	url = https://github.com/incubadora-de-ideias/DAILY-CHALLENGES.git
