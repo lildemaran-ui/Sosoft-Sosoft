@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import iconNav from "../assets/IconNav.png";
 import { Menu, X } from "lucide-react";
 import BotaoMenu from "../Hooks/Menu";
 import ScrollToServiço from "../Hooks/ScrollToServiço";
+import iconNav from "../assets/IconNav.png";
+
 export default function Nav() {
   const {irParaServicos} = ScrollToServiço();
   const { menuOpen, CloseMenu, OpenMenu } = BotaoMenu();
@@ -12,16 +13,17 @@ export default function Nav() {
       {/* Menu desktop */}
 
       <nav className="flex h-14 sm:h-20 items-center justify-between px-6      ">
-        <Link to="/PaginaInicial">
-          <div className="flex gap-3 items-center text-xl sm:text-3xl text-[#F19209] font-semibold">
-            <img
-              src={iconNav}
-              alt="Sosoft Logo"
-              className="h-8 sm:h-12 object-contain"
-            />
-            <p>SOSOFT</p>
-          </div>
-        </Link>
+        <Link to="/">
+      <div className="flex gap-3 items-center text-xl sm:text-3xl text-[#F19209] font-semibold">
+        <img
+          src={iconNav}
+          alt="Sosoft Logo"
+          fetchPriority="high"
+          className="h-8 sm:h-12 object-contain"
+        />
+        <p>SOSOFT</p>
+      </div>
+    </Link>
         <div className="hidden md:items-center md:flex gap-4 ">
           <Link
             to="/PaginaInicial"
@@ -56,8 +58,8 @@ export default function Nav() {
           </a>
           <div>
             <a href="#Contacto">
-              <button className="  px-3 py-2 rounded-md bg-[#F19209] transition-colors duration-700 font-medium hover:bg-[#da8309] text-white">
-                Fale conosco
+              <button className="  px-4 py-2 rounded-md bg-[#F19209] transition-colors duration-700 font-medium hover:bg-[#da8309] text-white">
+                Fale connosco
               </button>
             </a>
           </div>

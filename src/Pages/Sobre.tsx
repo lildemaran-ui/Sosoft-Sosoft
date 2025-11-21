@@ -23,7 +23,7 @@ export default function Sobre() {
         <div className="max-w-4xl justify-between text-start flex mb-20 mx-auto">
           <div>
             <p className="text-xs sm:text-lg font-medium">
-              {" "}
+              
               O principal objetivo da
               <span className="text-[#F19209] font-bold  ">SOSOFT</span> é
               impulsionar a transformação digital no sector da educação e da
@@ -34,7 +34,7 @@ export default function Sobre() {
             </p>
             <div className="flex text-xs sm:text-lg flex-col text-start font-medium mt-12">
               <p>
-                {" "}
+                
                 ✔️ Modernizar instituições através de plataformas digitais;
               </p>
               <p>
@@ -50,13 +50,13 @@ export default function Sobre() {
           </div>
 
           <div className="w-[100%] sm:h-auto sm:w-[200%]  bg-cover  bg-center">
-            <img src={foto2} alt="" className=" h-full " />
+            <img loading="lazy" src={foto2} alt="" className=" h-full " />
           </div>
         </div>
         <div className="max-w-4xl justify-between flex  mx-auto  ">
           <div className="w-[100%] h-auto sm:w-[200%]  bg-cover  bg-center">
-            {" "}
-            <img src={foto3} alt="" />
+            
+            <img loading="lazy" src={foto3} alt="" />
           </div>
           <div className="w-[200%]  bg-cover  bg-center">
             <p className="text-xs sm:text-lg text-start font-medium">
@@ -72,7 +72,7 @@ export default function Sobre() {
         <div className="max-w-4xl justify-between flex text-start mt-20 mx-auto  ">
           <div className="w-[200%]  bg-cover  bg-center">
             <p className="text-xs sm:text-lg font-medium">
-              Os sistemas e plataformas da{" "}
+              Os sistemas e plataformas da
               <span className="text-[#F19209] font-bold  ">SOSOFT </span>são
               destinados a instituições públicas e privadas que procuram inovar
               e otimizar a sua gestão, em especial:
@@ -96,8 +96,8 @@ export default function Sobre() {
           </div>
 
           <div className="w-[100%] h-auto sm:w-[200%]  bg-cover  bg-center">
-            {" "}
-            <img src={foto4} alt="" className="h-96" />
+            
+            <img loading="lazy" src={foto4} alt="" className="h-96" />
           </div>
         </div>
       </section>

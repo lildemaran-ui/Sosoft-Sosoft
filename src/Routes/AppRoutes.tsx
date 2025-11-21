@@ -8,15 +8,14 @@ import DefaultLayout from "../Templates/DefaultLayout";
 export default function AppRoutes() {
   return (
     <Routes>
-      
-        <Route path="/" element={<DefaultLayout/>}>
-      <Route index element={<Navigate to="/PaginaInicial" />}></Route>
-      <Route
-        path="/PaginaInicial"
-        element={<PaginaInicial></PaginaInicial>}
-      ></Route>
-      <Route path="/Portifolio" element={<Portfolio></Portfolio>}></Route>
-      <Route path="/Sobre" element={<Sobre></Sobre>}></Route>
+      <Route path="/" element={<DefaultLayout />}>
+        <Route index element={<Navigate to="/PaginaInicial" />}></Route>
+        <Route
+          path="/PaginaInicial"
+          element={<PaginaInicial></PaginaInicial>}
+        ></Route>
+        <Route path="/Portifolio" element={<Portfolio></Portfolio>}></Route>
+        <Route path="/Sobre" element={<Sobre></Sobre>}></Route>
       </Route>
     </Routes>
   );
