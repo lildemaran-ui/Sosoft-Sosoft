@@ -82,7 +82,7 @@ export default function PaginaInicial() {
 
           {/* Texto */}
         </div>
-        <h1 className="font-roboto font-bold items-center justify-center mb-12 flex text-2xl sm:text-4xl transition-colors duraction-700 cursor-default text-[#F19209] hover:text-[#04639b]">
+        <h1 className="font-roboto font-bold items-center justify-center mb-12 flex text-2xl sm:text-4xl cursor-default text-[#F19209]">
           Contacte-nos!
         </h1>
         <div className="items-center justify-center flex  mb-10">
