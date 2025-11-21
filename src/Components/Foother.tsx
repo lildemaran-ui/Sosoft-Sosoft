@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom";
+import iconNav from "../assets/IconFooter.png"
 import RotaNavegaçãoFooter from "../Hooks/RotaNavegaçãoFooter";
 import RotaLogo from "../Hooks/RotaLogoFt";
 import RouteService from "../Hooks/ScrollToServiço"
+
+import ImageProtetor from "./ImageProtector";
+
 export default function Foother() {
   const {irParaServicos} = RouteService ()
   return (
@@ -9,7 +13,17 @@ export default function Foother() {
       <footer className="bg-[#2B8CAE] text-white  w-full ">
         <div className="max-w-7xl mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
+
             <RotaLogo/>
+
+            <div className="flex gap-3 items-center text-xl sm:text-3xl text-white font-semibold">
+           <ImageProtetor
+            src={iconNav}
+            alt="Sosoft Logo"
+            className="h-8 sm:h-12 object-contain"
+          />
+          <p>SOSOFT</p>
+         </div>
             <p className="text-white font-roboto text-xs sm:text-sm mt-4 leading-relaxed cursor-default">
               Soluções inovadoras que facilitam e contribuem para o nosso
               cotidiano

@@ -7,7 +7,7 @@ export default function PaginaInicial() {
   const {PaginaInicial} = Scrollinicial();
   return (
     /**Cabeçalho */
-    <div className="overflow-y-auto scroll-smooth ">
+    <div className="overflow-y-auto scroll-smooth " onLoad={PaginaInicial}>
      
       <div>
         <div className="relative w-full h-screen overflow-hidden">

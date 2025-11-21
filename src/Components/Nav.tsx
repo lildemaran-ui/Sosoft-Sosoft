@@ -4,27 +4,29 @@ import BotaoMenu from "../Hooks/Menu";
 import ScrollToServiço from "../Hooks/ScrollToServiço";
 import iconNav from "../assets/IconNav.png";
 
+import ImageProtetor from "./ImageProtector";
+
 export default function Nav() {
-  const {irParaServicos} = ScrollToServiço();
+  const { irParaServicos } = ScrollToServiço();
   const { menuOpen, CloseMenu, OpenMenu } = BotaoMenu();
 
   return (
     <header className="fixed top-0  w-full scroll-smooth  transparent-bg z-[50]  ">
       {/* Menu desktop */}
 
-      <nav className="flex h-14 sm:h-20 items-center justify-between px-6      ">
+      <nav className="flex h-14 sm:h-20 items-center justify-between px-6">
         <Link to="/">
-      <div className="flex gap-3 items-center text-xl sm:text-3xl text-[#F19209] font-semibold">
-        <img
-          src={iconNav}
-          alt="Sosoft Logo"
-          fetchPriority="high"
-          className="h-8 sm:h-12 object-contain"
-        />
-        <p>SOSOFT</p>
-      </div>
-    </Link>
-        <div className="hidden md:items-center md:flex gap-4 ">
+          <div className="flex gap-3 items-center text-xl sm:text-3xl text-[#F19209] font-semibold">
+            <ImageProtetor
+              src={iconNav}
+              alt="Sosoft Logo"
+              className="h-8 sm:h-12 object-contain"
+            />
+            <p>SOSOFT</p>
+          </div>
+        </Link>
+
+        <div className="hidden lg:items-center lg:flex gap-4 ">
           <Link
             to="/PaginaInicial"
             className="text-[#F19209] text-lg font-semibold hover:text-orange-400/75"
@@ -66,7 +68,7 @@ export default function Nav() {
         </div>
         {/* Botão de menu */}
 
-        <button className="md:hidden " onClick={OpenMenu}>
+        <button className="lg:hidden " onClick={OpenMenu}>
           <Menu size={28} className="text-[#F19209]" />
         </button>
       </nav>
@@ -74,7 +76,7 @@ export default function Nav() {
 
       {menuOpen && (
         <div
-          className={` md:hidden fixed flex  flex-col items-start   px-6 bg-[#242e57] w-40 justify-start  right-0 top-0 h-screen shadow-lg z-50 ${
+          className={`  fixed flex  flex-col items-start   px-6 bg-[#242e57] w-40 justify-start  right-0 top-0 h-screen shadow-lg z-50 ${
             menuOpen
               ? "translate-x-0 opacity-100"
               : "translate-x-full opacity-0"

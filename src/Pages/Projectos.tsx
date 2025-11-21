@@ -1,6 +1,6 @@
-import PortalIPILIcon from "../assets/Ipil.jpg"; 
+import PortalIPILIcon from '../assets/Ipil.jpg' 
 import AcessoETPIcon from "../assets/acessoetp.png";   
-
+import ImageProtetor from '../Components/ImageProtector';
 export default function Projectos() {
   return (
     <section className="py-20 px-6 bg-gray-60" id="projectos">
@@ -9,7 +9,7 @@ export default function Projectos() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Portal IPIL */}
           <div className="flex flex-col items-center p-6 border rounded-lg shadow hover:shadow-xl transition duration-500 transform hover:-translate-y-1 hover:scale-105">
-            <img
+            <ImageProtetor
               src={PortalIPILIcon}
               alt="Ícone do Portal IPIL"
               className="w-20 h-20 mb-4"
@@ -23,10 +23,10 @@ export default function Projectos() {
 
           {/* Acesso ETP */}
           <div className="flex flex-col items-center p-6 border rounded-lg shadow hover:shadow-xl transition duration-500 transform hover:-translate-y-1 hover:scale-105 ">
-            <img
+            <ImageProtetor
               src={AcessoETPIcon}
               alt="Ícone do Acesso ETP"
-              className="w-20 h-20 mb-4 "
+              className="w-36 h-20 mb-4 "
             />
             <h3 className="text-xl font-semibold mb-2">Acesso ETP</h3>
             <p className="text-gray-700">

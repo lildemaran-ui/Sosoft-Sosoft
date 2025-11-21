@@ -102,3 +102,14 @@ html {
 .animate-moveArrow {
   animation: moveArrow 2s ease-in-out infinite;
 }
+.navbar {
+  background-color: rgba(0, 22, 50, 0.6); /* fallback visível sempre */
+}
+
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .navbar {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 22, 50, 0.3); /* mais leve quando há blur */
+  }
+}

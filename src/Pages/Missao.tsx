@@ -1,5 +1,5 @@
 import React from "react";
-import{ Shell, Eye, Gem } from "lucide-react";
+import{ Target, Eye, Gem } from "lucide-react";
 
 export default function MissaoVisaoValores() {
   return (
@@ -11,7 +11,7 @@ export default function MissaoVisaoValores() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Missão */}
           <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-1 hover:scale-105 text-center animate-fade-in-up">
-            <Shell size={48} className="text-5xl text-[#04639b] mb-4 mx-auto" />
+            <Target size={48} className="text-5xl text-[#04639b] mb-4 mx-auto" />
             <h3 className="text-xl font-semibold mb-2">Missão</h3>
             <p className="text-gray-600">
               Desenvolver soluções tecnológicas que conectam instituições ao futuro, promovendo inovação, eficiência e impacto social.
