@@ -52,8 +52,8 @@ export default function Sobre() {
 
 
           <div className="w-full h-auto flex justify-center bg-cover  bg-center">
-            {""}
-            <ImageProtetor src={foto2} alt="" className="  w-full max-w-[300px] sm:max-w-[280px] md:max-w-[220px] lg:max-w-[180px] h-auto object-contain mx-auto " />
+            
+            <ImageProtetor src={foto2} alt="" className="  w-full max-w-[300px] sm:max-w-[280px] md:max-w-[220px] lg:max-w-[380px] h-auto object-contain mx-auto " />
           </div>
 
         </div>
