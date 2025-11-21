@@ -2,6 +2,7 @@ import foto2 from "../assets/foto_sobre2.svg";
 import foto3 from "../assets/foto_sobre3.svg";
 import foto4 from "../assets/foto_sobre4.svg";
 import sosoft_sobre from "../assets/sosoft_sobre.jpeg";
+import ImageProtetor from "../Components/ImageProtector";
 
 export default function Sobre() {
   return (
@@ -21,7 +22,7 @@ export default function Sobre() {
         ></video>
 
         <div className="max-w-4xl justify-between text-start flex mb-20 mx-auto">
-          <div>
+          <div className="w-[100%] h-auto sm:w-[200%]  bg-cover  bg-center">
             <p className="text-xs sm:text-lg font-medium">
               {" "}
               O principal objetivo da
@@ -32,7 +33,7 @@ export default function Sobre() {
               melhorar a gestão institucional e aumentar a produtividade através
               da tecnologia.
             </p>
-            <div className="flex text-xs sm:text-lg flex-col text-start font-medium mt-12">
+            <div className="flex text-xs sm:text-lg flex-col text-start  font-medium  mt-5">
               <p>
                 {" "}
                 ✔️ Modernizar instituições através de plataformas digitais;
@@ -49,14 +50,16 @@ export default function Sobre() {
             </div>
           </div>
 
-          <div className="w-[100%] sm:h-auto sm:w-[200%]  bg-cover  bg-center">
-            <img src={foto2} alt="" className=" h-full " />
+          <div className="w-full h-auto flex justify-center bg-cover  bg-center">
+            {""}
+            <ImageProtetor src={foto2} alt="" className="  w-full max-w-[300px] sm:max-w-[280px] md:max-w-[220px] lg:max-w-[180px] h-auto object-contain mx-auto " />
           </div>
+
         </div>
         <div className="max-w-4xl justify-between flex  mx-auto  ">
           <div className="w-[100%] h-auto sm:w-[200%]  bg-cover  bg-center">
             {" "}
-            <img src={foto3} alt="" />
+            <ImageProtetor src={foto3} alt="" className="w-full max-w-xs h-auto object-contain" />
           </div>
           <div className="w-[200%]  bg-cover  bg-center">
             <p className="text-xs sm:text-lg text-start font-medium">
@@ -97,7 +100,7 @@ export default function Sobre() {
 
           <div className="w-[100%] h-auto sm:w-[200%]  bg-cover  bg-center">
             {" "}
-            <img src={foto4} alt="" className="h-96" />
+            <ImageProtetor src={foto4} alt="" className="w-full max-w-xs h-auto object-contain" />
           </div>
         </div>
       </section>

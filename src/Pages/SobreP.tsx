@@ -1,4 +1,5 @@
-    import SobrePort from '../assets/SobrePort.png'
+    import SobrePort from '../assets/SOSOFT1.svg'
+    import ImageProtetor from '../Components/ImageProtector'
     export default function SobreP() {
   return (
     <section className="py-20 px-6 bg-white" id="sobre">
@@ -10,14 +11,14 @@
             Atuamos com transparência, rigor e ética, desenvolvendo soluções sob medida para empresas que buscam inovação e crescimento.
           </p>
           <ul className="list-disc list-inside text-gray-700 text-base">
-            <li>5 anos de experiência</li>
+            <li>2 anos de experiência</li>
             <li>20 colaboradores</li>
-            <li>10projetos realizados</li>
+            <li>10 projetos realizados</li>
             <li>Atuação em múltiplos setores: financeiro, público, energia, telecom</li>
           </ul>
         </div>
         <div className="md:w-1/2">
-          <img
+          <ImageProtetor
             src={SobrePort}
             alt="Ilustração tecnológica Sosoft"
             className="w-full max-w-md mx-auto"

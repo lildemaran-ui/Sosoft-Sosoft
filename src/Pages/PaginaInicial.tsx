@@ -14,6 +14,7 @@ export default function PaginaInicial() {
           <video
             autoPlay
             muted
+            preload="auto"
             loop
             className="absolute top-0 left-0 w-full h-full object-cover z-0"
           >
@@ -32,7 +33,7 @@ export default function PaginaInicial() {
               </p>
             </div>
             <a href="#Serviços">
-              <button className="bg-[#F19209] font-roboto hover:text-white text-base p-2 sm:text-xl   rounded-xl shadow-[0_4px_12px_rgba(241,146,9,0.5)] hover:shadow-[0_2px_16px_rgba(241,146,9,0.7)] text-white transition-transform duration-700 sm:p-3 ">
+              <button className="bg-[#F19209] font-roboto hover:text-white text-base p-2 sm:text-xl   rounded-xl shadow-[0_4px_12px_rgba(241,146,9,0.5)] hover:shadow-[0_2px_16px_rgba(241,146,9,0.7)] text-white transition-transform duration-700 sm:p-4 ">
                 Explore Nossos Serviços
                 <img
                   src={arrow}
@@ -62,7 +63,7 @@ export default function PaginaInicial() {
           <h1 className="font-bold text-xl sm:text-4xl font-roboto">
             Pronto para viver o resultado?
           </h1>
-          <p className="text-gray-400 text-xs sm:text-lg font-roboto ">
+          <p className="text-gray-400 md:text-center text-xs sm:text-lg font-roboto ">
             Entre em contacto connosco e descubra como impulsionamos seu negócio
             com os nossos serviços.
           </p>
@@ -72,6 +73,7 @@ export default function PaginaInicial() {
             autoPlay
             muted
             loop
+            preload="auto"
             className="w-[100%] sm:w-[64%] h-96 mt-20 mb-20 bg-cover bg-center mx-auto object-cover rounded-xl"
           >
             <source src={videogif} type="video/mp4" />
