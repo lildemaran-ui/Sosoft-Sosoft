@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-export default function PaginaInicial() {
+export default function ScrollPaginicial() {
   const location = useLocation();
 
   useEffect(() => {
@@ -12,5 +12,5 @@ export default function PaginaInicial() {
       }, 200); // dá tempo da página carregar
     }
   }, [location]);
-  return {PaginaInicial}
+  return null
 }

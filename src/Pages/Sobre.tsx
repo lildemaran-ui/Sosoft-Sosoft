@@ -18,7 +18,7 @@ export default function Sobre() {
           autoPlay
           controls
           poster={sosoft_sobre}
-          src=""
+          src="#"
         ></video>
 
         <div className="max-w-4xl justify-between text-start flex mb-20 mx-auto">

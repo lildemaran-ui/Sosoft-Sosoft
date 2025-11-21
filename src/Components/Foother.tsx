@@ -1,29 +1,17 @@
 import { Link } from "react-router-dom";
-import iconNav from "../assets/IconFooter.png"
 import RotaNavegaçãoFooter from "../Hooks/RotaNavegaçãoFooter";
 import RotaLogo from "../Hooks/RotaLogoFt";
-import RouteService from "../Hooks/ScrollToServiço"
-
-import ImageProtetor from "./ImageProtector";
+import RouteService from "../Hooks/ScrollToServiço";
 
 export default function Foother() {
-  const {irParaServicos} = RouteService ()
+  const { irParaServicos } = RouteService();
   return (
     <div>
       <footer className="bg-[#2B8CAE] text-white  w-full ">
         <div className="max-w-7xl mx-auto py-12 px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
+            <RotaLogo />
 
-            <RotaLogo/>
-
-            <div className="flex gap-3 items-center text-xl sm:text-3xl text-white font-semibold">
-           <ImageProtetor
-            src={iconNav}
-            alt="Sosoft Logo"
-            className="h-8 sm:h-12 object-contain"
-          />
-          <p>SOSOFT</p>
-         </div>
             <p className="text-white font-roboto text-xs sm:text-sm mt-4 leading-relaxed cursor-default">
               Soluções inovadoras que facilitam e contribuem para o nosso
               cotidiano
@@ -36,7 +24,7 @@ export default function Foother() {
               Navegação
             </h3>
             <ol className="space-y-2 ">
-              <RotaNavegaçãoFooter/>
+              <RotaNavegaçãoFooter />
               <a onClick={irParaServicos}>
                 <li className="hover:text-[#F19209] text-xs sm:text-base transition-colors duration-700 cursor-pointer">
                   Serviços
@@ -59,7 +47,7 @@ export default function Foother() {
             </ol>
           </div>
           <div>
-            <h3  className="text-base sm:text-lg font-semibold text-white mb-4 cursor-default">
+            <h3 className="text-base sm:text-lg font-semibold text-white mb-4 cursor-default">
               Serviços
             </h3>
             <ol className="space-y-2">
@@ -104,9 +92,13 @@ export default function Foother() {
               Contacto
             </h3>
             <ol className="space-y-2">
-              <a href="tel:942031240" className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer">
+              <a
+                href="tel:942031240"
+                className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer"
+              >
                 Tel.: +244 942 031 240
-              </a><br />
+              </a>
+              <br />
               <a
                 href="mailto:geral@sosoft.ao"
                 className="hover:text-[#F19209] transition-colors text-xs sm:text-base duraction-700 cursor-pointer"

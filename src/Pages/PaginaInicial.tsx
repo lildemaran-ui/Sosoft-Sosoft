@@ -2,13 +2,14 @@ import video from "../assets/video3.mp4";
 import videogif from "../assets/codeGif.mp4";
 import arrow from "../assets/right-arrow.png";
 import Serviços from "./Serviços";
-import Scrollinicial from "../Hooks/Scrollinicial"
+import ScrollPaginicial from "../Hooks/Scrollinicial";
+
 export default function PaginaInicial() {
-  const {PaginaInicial} = Scrollinicial();
+ 
   return (
     /**Cabeçalho */
-    <div className="overflow-y-auto scroll-smooth " onLoad={PaginaInicial}>
-     
+    <div className="overflow-y-auto scroll-smooth ">
+     <ScrollPaginicial/>
       <div>
         <div className="relative w-full h-screen overflow-hidden">
           <video
@@ -48,7 +49,7 @@ export default function PaginaInicial() {
         {/* /**Nossos Serviços */}
 
         <h1
-          id="Serviços" onLoad={Scrollinicial}
+          id="Serviços" 
           className="text-black font-bold font-roboto items-center justify-center flex mt-10 text-2xl sm:text-4xl "
         >
           Nossos Serviços
